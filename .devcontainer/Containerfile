@@ -2,9 +2,8 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 ARG ZIG_VERSION='16.0-dev.3153+d6f43caad'
 ARG ZLS_VERSION='0.15.1'
-ARG MINISIGN_VERSION='0.12'
 
 
 ADD install_zig.sh /
 ADD minisign /bin/
-RUN chmod +x /install_zig.sh && /install_zig.sh ${ZIG_VERSION}  ${ZLS_VERSION} ${MINISIGN_VERSION}
+RUN chmod +x /install_zig.sh && /install_zig.sh ${ZIG_VERSION}  ${ZLS_VERSION}

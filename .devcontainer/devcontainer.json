@@ -8,7 +8,6 @@
     "args": {
       "ZIG_VERSION": "16.0-dev.3153+d6f43caad",
       "ZLS_VERSION": "0.15.1",
-      "MINISIGN_VERSION": "0.12",
     },
   },
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
