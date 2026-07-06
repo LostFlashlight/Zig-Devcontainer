@@ -1,5 +1,5 @@
 #  Zig devcontainer
-A complete Zig development environment follwoing the devcontainer standard, compatibel with 0.15.x and the 0.16.0-dev builds of zig.
+A complete Zig development environment follwoing the devcontainer standard, compatibel with 0.15.x, 0.16.x and the 0.17.0-dev builds of zig.
 
 ## usage
 to use simply clone the repo and copy the ```.devcontainer``` directory into your project.
