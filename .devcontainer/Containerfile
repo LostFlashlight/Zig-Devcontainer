@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
-ARG ZIG_VERSION='16.0-dev.3153+d6f43caad'
-ARG ZLS_VERSION='0.15.1'
+ARG ZIG_VERSION
+ARG ZLS_VERSION
 
 
 ADD install_zig.sh /

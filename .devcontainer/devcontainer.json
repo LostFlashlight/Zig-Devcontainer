@@ -3,8 +3,8 @@
   "build": {
     "dockerfile": "Containerfile",
     "args": {
-      "ZIG_VERSION": "16.0-dev.3153+d6f43caad",
-      "ZLS_VERSION": "0.15.1",
+      "ZIG_VERSION": "0.16.0",
+      "ZLS_VERSION": "0.16.0",
     },
   },
 }

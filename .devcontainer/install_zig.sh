@@ -9,7 +9,7 @@ ZIG_PUB_KEY='RWSGOq2NVecA2UPNdBUZykf1CCb147pkmdtYxgb3Ti+JO/wCYvhbAb/U'
 ZLS_PUB_KEY='RWR+9B91GBZ0zOjh6Lr17+zKf5BoSuFvrx2xSeDE57uIYvnKBGmMjOex'
 
 # check if we deal with a release version or a dev version because the urls are different
-if [[ "${ZIG_VERSION}" = 0.15.* ]]; then
+if [[ "${ZIG_VERSION}" = 0.15.* ]] || [[ "${ZIG_VERSION}" = 0.16.* ]]; then
     # stable builds
     ZIG_DL_URL=https://ziglang.org/download/${ZIG_VERSION}/zig-x86_64-linux-${ZIG_VERSION}.tar.xz
 else
@@ -48,8 +48,8 @@ if [[ ${MINISIGN_ZLS} = *"Trusted"* ]]; then
     echo "ZLS signiture confirmed"
 
     tar xf zls.tar.xz
-    cp /zls "/opt/zig-x86_64-linux-${ZIG_VERSION}"
-    ln -s /opt/zig-x86_64-linux-${ZIG_VERSION}/zls /bin
+    cp /zls "/opt/zig-x86_64-linux-${ZIG_VERSION}/"
+    ln -s "/opt/zig-x86_64-linux-${ZIG_VERSION}/zls" /bin/
 
 
 else
