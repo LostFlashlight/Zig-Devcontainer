@@ -41,11 +41,11 @@ if [[ ${MINISIGN_ZIG} = *"Trusted"* ]]; then # dont toutch without looking at if
     cp -r "/zig-x86_64-linux-${ZIG_VERSION}" /opt
     ln -s "/opt/zig-x86_64-linux-${ZIG_VERSION}/zig" /bin/
 else
-    echo "ZLS signature is wrong "
+    echo "ZIG signature is wrong "
 fi
 
 if [[ ${MINISIGN_ZLS} = *"Trusted"* ]]; then
-    echo "ZIG signiture confirmed"
+    echo "ZLS signiture confirmed"
 
     tar xf zls.tar.xz
     cp /zls "/opt/zig-x86_64-linux-${ZIG_VERSION}"
